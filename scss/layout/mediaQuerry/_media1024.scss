@@ -1,0 +1,142 @@
+
+@media (max-width: 1024px){
+    /*+++ NAV +++ */
+    
+.abrir-menu,
+.cerrar-menu{
+    display: block;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color:map-get($colores, colorComun);
+}
+    
+.nav{
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: end;
+    gap: 1rem;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: map-get($colores, colorSecundario1 );
+    padding: 1rem;
+    }
+.navBar{
+    flex-direction: column;
+    align-items: end;
+    }
+.nav.visible{
+    opacity: 1;
+    visibility: visible;
+    }
+    
+    
+    /*+++ FIN NAV +++ */
+
+/*+++ PAGINA MODA +++ */
+.moda-1{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    "tittle-1 tittle-1"
+    "div1-1 div2-1"
+}
+.moda-2{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    "tittle-2 tittle-2"
+    "div1-2 div2-2"
+}
+    /*+++ FIN PAGINA MODA +++ */
+
+    /*+++ PAGINA LOOKS +++ */
+.looksRight{
+    grid-template-areas:
+    "estilo1 estilo1 estilo1 h4"
+    "estilo2 estilo2 estilo2 h4"
+    "estilo3 estilo3 estilo3 h4"
+    ;
+}
+.looksLeft{
+    grid-template-areas:
+    "h4 estilo1 estilo1 estilo1"
+    "h4 estilo2 estilo2 estilo2"
+    "h4 estilo3 estilo3 estilo3"
+    ;
+}
+.estilo1{
+    align-items: center;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "descripcion1 descripcion1 img-estilo1"
+}
+
+.estilo2{
+    align-items: center;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "img-estilo2 descripcion2 descripcion2"
+}
+.estilo3{
+    align-items: center;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "descripcion3 descripcion3 img-estilo3"
+}
+.descripcion1{
+    grid-area: descripcion1;
+}
+.descripcion2{
+    grid-area: descripcion2;
+}
+.descripcion3{
+    grid-area: descripcion3;
+}
+.img-estilo1{
+    grid-area: img-estilo1;
+}
+.img-estilo2{
+    grid-area: img-estilo2;
+}
+.img-estilo3{
+    grid-area: img-estilo3;
+}
+/*+++ PAGINA ACCESORIOS +++ */
+.accesorios{
+    gap:2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas:
+    "tittleAccesorio"
+    "accesorio1"
+    "accesorio2"
+}
+.experiencias{
+    gap: 0rem;
+    margin: .1rem;
+}
+.mapa{
+    width: 70%;
+    aspect-ratio: 4/3;
+}
+.mapa-container{
+    text-align: center;
+}
+.send{
+    width: 30%;
+    margin-left: 35%;
+}
+}

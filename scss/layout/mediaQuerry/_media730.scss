@@ -1,0 +1,26 @@
+
+
+@media (max-width: 730px){
+
+    /*+++ PAGINA MODA +++ */
+.preliminares{
+    display: none;
+}
+video{
+    max-width: 100%;
+}
+/*+++ FIN PAGINA MODA +++ */
+/*+++ FOOTER +++ */
+
+
+footer{
+    gap: 1rem;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    "AcercadeStyleMan Seguinos"
+    "Asistencia Seguinos"
+    ;
+}
+
+}

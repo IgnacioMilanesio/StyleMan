@@ -1,0 +1,100 @@
+video{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 75%;
+    height: auto;
+}
+
+.preliminares{
+    gap: 1rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "temario1 temario2 temario3"
+    ;
+    .temario1{
+        grid-area: temario1;
+        text-align: center;
+        h3{
+            margin-top: 1rem;
+        }
+    }
+    .temario2{
+        grid-area: temario2;
+        text-align: center;
+        h3{
+            margin-top: 1rem;
+        }
+    }
+    .temario3{
+        grid-area: temario3;
+        text-align: center;
+        h3{
+            margin-top: 1rem;
+        }
+    }
+}
+
+.moda-1{
+    gap: 1rem;
+    text-align: center;
+    background: map-get($colores , colorBack );
+    border-right: .375rem solid map-get($colores , colorSacundario2 );
+    box-shadow: 0rem .25rem .25rem map-get($colores , colorBox );
+    border-radius: 2.4375rem;
+    margin: 1rem;
+    padding: 1rem;
+    align-items: center;
+    img{
+        width: 16.25rem ;
+        height: 20.625rem;
+        border-bottom: .375rem solid map-get($colores, colorSacundario2);
+        border-radius: 2.5rem;
+    }
+    div{
+        h5{
+            margin-top: 0.5rem ;
+            margin-bottom: 0.5rem;
+        }
+    } 
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    "div1-1 div1-1 div2-1 div2-1 tittle-1"
+    "div1-1 div1-1 div2-1 div2-1 tittle-1"
+    ;
+}
+.div1-1{
+    grid-area: div1-1;
+}
+.div2-1{
+    grid-area: div2-1;
+}
+.tittle-1{
+    grid-area: tittle-1;
+}    
+
+.moda-2{
+    @extend .moda-1;
+    grid-template-areas:
+    "tittle-2 div1-2 div1-2 div2-2 div2-2"
+    "tittle-2 div1-2 div1-2 div2-2 div2-2"
+    ;
+}
+.div1-2{
+    grid-area: div1-2;
+}
+.div2-2{
+    grid-area: div2-2;
+}
+.tittle-2{
+    grid-area: tittle-2;
+}

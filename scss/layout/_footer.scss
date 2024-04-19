@@ -1,0 +1,39 @@
+footer{
+    display: grid;
+    padding: .625rem;
+    background-color: map-get($colores, colorSecundario1 );
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "Asistencia AcercadeStyleMan Seguinos"
+    ;
+    a{
+        text-decoration: none;
+        p{
+            &:hover{
+            color: map-get($colores, colorSacundario2 );
+            transition: color 0.3s ease;
+            }
+        }
+        h2{
+            &:hover{
+                color: map-get($colores, colorSacundario2 );
+                transition: color 0.3s ease;
+                }
+        }
+    }
+    .Asistencia{
+        grid-area: Asistencia;
+    }
+    .AcercadeStyleMan{
+        grid-area: AcercadeStyleMan;
+    }
+    .Seguinos{
+        grid-area: Seguinos;
+    }
+    div{
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+    }
+}

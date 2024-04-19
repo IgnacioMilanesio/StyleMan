@@ -1,0 +1,32 @@
+@media (max-width: 500px){
+
+.accesorios{
+        gap:2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas:
+        "tittleAccesorio"
+        "accesorio1"
+        "accesorio2"
+}
+
+footer{
+    gap: 1rem;
+    grid-template-columns: 1FR;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "AcercadeStyleMan"
+    "Asistencia"
+    "Seguinos"
+    ;
+    div{
+        display: flex;
+        flex-direction:column;
+        align-items: start;
+    }
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+}
+}

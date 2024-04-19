@@ -1,0 +1,55 @@
+/*<<< HEADER <<< */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 1rem 0rem 1rem;
+    background-color: #A81818;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    div{
+        a{
+            text-decoration: none;
+            h1{
+                &:hover{
+                    color: map-get($colores, colorSacundario2 );
+                    transition: color 0.3s ease;
+                }
+            }
+        };  
+    };
+    .navBar{
+        display: flex;
+        list-style-type: none;
+        gap: 1.25rem;
+        li{
+            .active{
+                a{
+                    text-decoration: underline;
+                    color: map-get($colores, colorComun );
+                }
+            }
+            a{
+                text-decoration: none;
+                h2{
+                    &:hover{
+                        color: map-get($colores, colorSacundario2 );
+                        transition: color 0.3s ease;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+/* --- BARRA DE NAVEGACION --- */
+
+.abrir-menu{
+    display: none;
+}
+.cerrar-menu{
+    display: none;
+}
+
+/* --- FIN BARRA DE NAVEGACION --- */

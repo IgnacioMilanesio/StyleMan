@@ -1,0 +1,19 @@
+.image-container img {
+    border-radius: 50%;
+    overflow:hidden;
+    transition: border-color 0.1s ease;
+    width: 100%;
+    height: auto;
+    max-width: 10rem;
+    max-height: 10rem;
+  /* ATENCION ATRIBUTO OBJECT */
+    object-fit: fill;
+  }
+  
+.image-container
+    &:hover{ 
+        img {
+        border: .1875rem solid map-get($colores, colorSecundario1);
+    }
+}
+  
